@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import allcountry from '../../../public/allcountry.png';
+import { BsFillCartPlusFill, BsFillHeartFill, BsFillSearchHeartFill } from 'react-icons/bs';
+import { FaUserAlt} from 'react-icons/fa';
+import { BiSolidDownArrow } from 'react-icons/bi';
 
 const Navigation = () => {
 
     const NavigationsLink = ()=> (
         <>
+        <img src={allcountry} className='h-7 hidden lg:flex' alt="" />
+        <li><a>USD <BiSolidDownArrow /></a></li>
            <Link to='/products/1'><li><a>Women</a></li></Link>
       <Link to='/products/2'><li><a>Men</a></li></Link>
       <Link to='/products/3'><li><a>Children</a></li></Link> 
@@ -18,9 +24,6 @@ const Navigation = () => {
         {/* starting part */}
         <div className="navbar-start hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      {/* <Link to='/products/1'><li><a>Women</a></li></Link>
-      <Link to='/products/2'><li><a>Men</a></li></Link>
-      <Link to='/products/3'><li><a>Children</a></li></Link> */}
       <NavigationsLink />
     </ul>
   </div>
@@ -45,6 +48,11 @@ const Navigation = () => {
       <Link to='/products/2'><li><a>About</a></li></Link>
       <Link to='/products/3'><li><a>Contact</a></li></Link> 
       <Link to='/products/3'><li><a>Stores</a></li></Link> 
+      <li><a><BsFillCartPlusFill /> <span>0</span></a></li> 
+      <li><a><BsFillSearchHeartFill /></a></li>
+      <li><a><BsFillHeartFill /></a></li>
+      <li><a><FaUserAlt /></a></li>
+      
     </ul>
   </div>
 </div>

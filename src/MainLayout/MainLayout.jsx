@@ -7,7 +7,9 @@ const MainLayout = () => {
     return (
         <div>
             <Navigation />
+            <div className='mt-5'>
             <Outlet></Outlet>
+            </div>
             <Footer />
         </div>
     );
