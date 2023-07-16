@@ -1,8 +1,10 @@
 import React from 'react';
+import FeaturedProducts from '../../components/FeaturedProducts/FeaturedProducts';
 
 const Home = () => {
     return (
-        <div className='flex items-center justify-between gap-[130px]'>
+      <>
+          <div className='flex items-center justify-between gap-[130px]'>
           <div className='w-[70%]'>
           <img  src="https://i.ibb.co/nMW4LQH/pexels-ron-lach-10260876.jpg" alt="Model" className='grayscale' />
           </div>
@@ -18,6 +20,9 @@ const Home = () => {
            <img src="https://i.ibb.co/vBmw0cS/pexels-12193420.jpg" alt="model" className='grayscale w-full' />
           </div>
         </div>
+
+        <FeaturedProducts />
+      </>
     );
 };
 

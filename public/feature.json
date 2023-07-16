@@ -1,0 +1,95 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "img": "https://example.com/images/product1.jpg",
+        "img2": "https://example.com/images/product1_additional.jpg",
+        "clothesName": "T-Shirt",
+        "isNew": true,
+        "oldPrice": 29.99,
+        "price": 19.99
+      },
+      {
+        "id": 2,
+        "img": "https://example.com/images/product2.jpg",
+        "img2": "https://example.com/images/product2_additional.jpg",
+        "clothesName": "Jeans",
+        "isNew": false,
+        "oldPrice": 49.99,
+        "price": 39.99
+      },
+      {
+        "id": 3,
+        "img": "https://example.com/images/product3.jpg",
+        "img2": "https://example.com/images/product3_additional.jpg",
+        "clothesName": "Dress",
+        "isNew": true,
+        "oldPrice": 19.99,
+        "price": 14.99
+      },
+      {
+        "id": 4,
+        "img": "https://example.com/images/product4.jpg",
+        "img2": "https://example.com/images/product4_additional.jpg",
+        "clothesName": "Shirt",
+        "isNew": false,
+        "oldPrice": 39.99,
+        "price": 29.99
+      },
+      {
+        "id": 5,
+        "img": "https://example.com/images/product5.jpg",
+        "img2": "https://example.com/images/product5_additional.jpg",
+        "clothesName": "Skirt",
+        "isNew": true,
+        "oldPrice": 59.99,
+        "price": 49.99
+      },
+      {
+        "id": 6,
+        "img": "https://example.com/images/product6.jpg",
+        "img2": "https://example.com/images/product6_additional.jpg",
+        "clothesName": "Pants",
+        "isNew": true,
+        "oldPrice": 24.99,
+        "price": 19.99
+      },
+      {
+        "id": 7,
+        "img": "https://example.com/images/product7.jpg",
+        "img2": "https://example.com/images/product7_additional.jpg",
+        "clothesName": "Blouse",
+        "isNew": false,
+        "oldPrice": 34.99,
+        "price": 24.99
+      },
+      {
+        "id": 8,
+        "img": "https://example.com/images/product8.jpg",
+        "img2": "https://example.com/images/product8_additional.jpg",
+        "clothesName": "Jacket",
+        "isNew": true,
+        "oldPrice": 44.99,
+        "price": 34.99
+      },
+      {
+        "id": 9,
+        "img": "https://example.com/images/product9.jpg",
+        "img2": "https://example.com/images/product9_additional.jpg",
+        "clothesName": "Shorts",
+        "isNew": true,
+        "oldPrice": 19.99,
+        "price": 14.99
+      },
+      {
+        "id": 10,
+        "img": "https://example.com/images/product10.jpg",
+        "img2": "https://example.com/images/product10_additional.jpg",
+        "clothesName": "Sweater",
+        "isNew": false,
+        "oldPrice": 54.99,
+        "price": 44.99
+      }
+    ]
+  }
+  
