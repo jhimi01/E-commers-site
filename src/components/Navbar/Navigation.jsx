@@ -19,8 +19,21 @@ const Navigation = () => {
     
 
     return (
-        <div className="navbar bg-base-100">
-
+       <>
+       <div className='bg-base-200 text-gray-500 py-3 px-5 flex items-center justify-between'>
+        <div>
+          <p>+0123456789</p>
+        </div>
+        <div>
+          Summer Sale discount off <span className='text-red-500'>50%!</span> Shop now
+        </div>
+        <div>
+          <span>Ecuador </span>
+          <span>USD - US Dollar</span>
+        </div>
+       </div>
+         <div className="navbar bg-base-100">
+        
         {/* starting part */}
         <div className="navbar-start hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -38,7 +51,7 @@ const Navigation = () => {
        <NavigationsLink />
       </ul>
     </div>
-   <Link to='/'> <a className="btn btn-ghost normal-case text-xl">Shoppy</a></Link>
+   <Link to='/'><p className='text-2xl'>Shoppy</p></Link>
   </div>
   
   {/* end part */}
@@ -56,6 +69,7 @@ const Navigation = () => {
     </ul>
   </div>
 </div>
+       </>
     );
 };
 
