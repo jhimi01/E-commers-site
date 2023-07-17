@@ -9,15 +9,6 @@
         "price": 19.99
       },
       {
-        "id": 2,
-        "img": "https://i.ibb.co/9qfz8dN/pexels-monstera-6311317.jpg",
-        "img2": "https://i.ibb.co/89F9Chh/pexels-monstera-6311447.jpg",
-        "clothesName": "Jeans",
-        "isNew": false,
-        "oldPrice": 49.99,
-        "price": 39.99
-      },
-      {
         "id": 3,
         "img": "https://i.ibb.co/19Xf9f1/pexels-ali-karimiboroujeni-17478031.jpg",
         "img2": "https://i.ibb.co/1XgzL1q/pexels-ali-karimiboroujeni-17478035.jpg",
@@ -34,6 +25,16 @@
         "isNew": false,
         "oldPrice": 39.99,
         "price": 29.99
+      },
+      
+      {
+        "id": 2,
+        "img": "https://i.ibb.co/9qfz8dN/pexels-monstera-6311317.jpg",
+        "img2": "https://i.ibb.co/89F9Chh/pexels-monstera-6311447.jpg",
+        "clothesName": "Jeans",
+        "isNew": false,
+        "oldPrice": 49.99,
+        "price": 39.99
       },
       {
         "id": 5,

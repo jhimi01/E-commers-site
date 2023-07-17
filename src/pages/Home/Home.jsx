@@ -1,5 +1,6 @@
 import React from 'react';
 import FeaturedProducts from '../../components/FeaturedProducts/FeaturedProducts';
+import Categories from '../../components/Categories/Categories';
 
 const Home = () => {
     return (
@@ -21,7 +22,9 @@ const Home = () => {
           </div>
         </div>
 
-        <FeaturedProducts />
+        <FeaturedProducts type={'Feature'}/>
+        <Categories />
+        <FeaturedProducts type={'Trending'}/>
       </>
     );
 };
