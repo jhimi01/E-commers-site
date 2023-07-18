@@ -39,7 +39,9 @@ const Products = () => {
                </div>
             </div>
         </div>
-        <div className='right'></div>
+        <div className='right'>
+            <img src="https://i.ibb.co/YZHLVkB/pexels-natalie-bond-3759660-1.jpg" alt="" />
+        </div>
         </div>
     );
 };
