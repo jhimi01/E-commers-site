@@ -17,10 +17,10 @@ const Navigation = () => {
         </>
     )
     
-
+// className='mt-0 w-5/6 mx-auto'
     return (
-       <>
-       <div className='bg-base-200 text-gray-500 py-3 px-5 flex items-center justify-between'>
+       <div className='mt-0 w-11/12 mx-auto'>
+       <div className='bg-base-200  text-gray-500 py-3 px-5 flex items-center justify-between'>
         <div>
           <p>+0123456789</p>
         </div>
@@ -69,7 +69,7 @@ const Navigation = () => {
     </ul>
   </div>
 </div>
-       </>
+       </div>
     );
 };
 

@@ -1,10 +1,12 @@
 import React from 'react';
 import FeaturedProducts from '../../components/FeaturedProducts/FeaturedProducts';
 import Categories from '../../components/Categories/Categories';
+import Contact from '../../components/Contact/Contact';
 
 const Home = () => {
     return (
       <>
+          <div className='w-5/6 mx-auto text-center'>
           <div className='flex items-center justify-between gap-[130px]'>
           <div className='w-[70%]'>
           <img  src="https://i.ibb.co/nMW4LQH/pexels-ron-lach-10260876.jpg" alt="Model" className='grayscale' />
@@ -25,6 +27,8 @@ const Home = () => {
         <FeaturedProducts type={'Feature'}/>
         <Categories />
         <FeaturedProducts type={'Trending'}/>
+        </div>
+        <Contact />
       </>
     );
 };
