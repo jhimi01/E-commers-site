@@ -1,11 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import allcountry from '../../../public/allcountry.png';
 import { BsFillCartPlusFill, BsFillHeartFill, BsFillSearchHeartFill } from 'react-icons/bs';
 import { FaUserAlt} from 'react-icons/fa';
 import { BiSolidDownArrow } from 'react-icons/bi';
 
 const Navigation = () => {
+
+  const location = useLocation()
+  console.log(location.pathname)
 
     const NavigationsLink = ()=> (
         <>
@@ -16,11 +19,12 @@ const Navigation = () => {
       <Link to='/products/3'><li><a>Children</a></li></Link> 
         </>
     )
+
     
 // className='mt-0 w-5/6 mx-auto'
     return (
        <div className='mt-0 w-11/12 mx-auto'>
-       <div className='bg-base-200  text-gray-500 py-3 px-5 flex items-center justify-between'>
+      {location?.pathname === '/' &&  <div className='bg-base-200  text-gray-500 py-3 px-5 flex items-center justify-between'>
         <div>
           <p>+0123456789</p>
         </div>
@@ -31,7 +35,7 @@ const Navigation = () => {
           <span>Ecuador </span>
           <span>USD - US Dollar</span>
         </div>
-       </div>
+       </div>}
          <div className="navbar bg-base-100">
         
         {/* starting part */}

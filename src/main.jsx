@@ -9,6 +9,16 @@ import Home from './pages/Home/Home.jsx';
 import Product from './pages/Product/Product.jsx';
 import Products from './pages/Products/Prosucts.jsx';
 import MainLayout from './MainLayout/MainLayout.jsx';
+import {
+  useQuery,
+  useMutation,
+  useQueryClient,
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query'
+// Create a client
+// Create a client
+const queryClient = new QueryClient()
 
 
 const router = createBrowserRouter([
@@ -37,6 +47,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   <RouterProvider router={router} />
+    <QueryClientProvider client={queryClient}>
+    <RouterProvider router={router} />
+    </QueryClientProvider>
   </React.StrictMode>,
 )

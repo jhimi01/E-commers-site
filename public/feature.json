@@ -56,8 +56,8 @@
       },
       {
         "id": 7,
-        "img": "https://example.com/images/product7.jpg",
-        "img2": "https://example.com/images/product7_additional.jpg",
+        "img": "https://i.ibb.co/hCSq7v6/images.jpg",
+        "img2": "https://i.ibb.co/crQnZhh/pexels-mohamed-abdelghaffar-1698730.jpg",
         "clothesName": "Blouse",
         "isNew": false,
         "oldPrice": 34.99,
@@ -65,8 +65,8 @@
       },
       {
         "id": 8,
-        "img": "https://example.com/images/product8.jpg",
-        "img2": "https://example.com/images/product8_additional.jpg",
+        "img": "https://i.ibb.co/yYNzrCQ/pexels-sadiq-padela-3702851.jpg",
+        "img2": "https://i.ibb.co/khCWQsW/pexels-pavel-danilyuk-6339756.jpg",
         "clothesName": "Jacket",
         "isNew": true,
         "oldPrice": 44.99,
@@ -74,8 +74,8 @@
       },
       {
         "id": 9,
-        "img": "https://example.com/images/product9.jpg",
-        "img2": "https://example.com/images/product9_additional.jpg",
+        "img": "https://i.ibb.co/tCnwMJp/pexels-valeria-ushakova-3094215.jpg",
+        "img2": "https://i.ibb.co/YZHLVkB/pexels-natalie-bond-3759660-1.jpg",
         "clothesName": "Shorts",
         "isNew": true,
         "oldPrice": 19.99,
@@ -83,8 +83,8 @@
       },
       {
         "id": 10,
-        "img": "https://example.com/images/product10.jpg",
-        "img2": "https://example.com/images/product10_additional.jpg",
+        "img": "https://i.ibb.co/XC8YjLn/download.jpg",
+        "img2": "https://i.ibb.co/hLx1pLC/images-3.jpg",
         "clothesName": "Sweater",
         "isNew": false,
         "oldPrice": 54.99,
