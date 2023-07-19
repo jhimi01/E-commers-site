@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import List from '../../components/List/List';
 import { useParams } from 'react-router-dom';
+import './Products.css'
 
 const Products = () => {
 
@@ -11,7 +12,7 @@ const Products = () => {
 
     return (
         <div className='products md:flex md:w-11/12 mx-auto justify-between'>
-        <div className='left md:w-[20%] mx-auto space-y-2'>
+        <div className='left top-0 md:w-[20%] mx-auto space-y-2'>
             <div>
                 <h1 className='text-xl font-semibold mb-2'>Product Categiries</h1>
                  <div>
