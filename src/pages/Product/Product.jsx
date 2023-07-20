@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { BsFillCartFill, BsHeart } from 'react-icons/bs';
+import { FaBalanceScale } from 'react-icons/fa';
 
 const Product = () => {
 
     const [selectedImage, setSelectedImage] = useState([0])
-
+    let [quantity, setQuantity] = useState(1)
+    
     const imges = [
         "https://i.ibb.co/tCnwMJp/pexels-valeria-ushakova-3094215.jpg",
         "https://i.ibb.co/YZHLVkB/pexels-natalie-bond-3759660-1.jpg"
@@ -19,11 +22,22 @@ const Product = () => {
                 <img className='h-full w-full object-cover' src={imges[selectedImage]} alt="" />
             </div>
            </div>
-           <div className="right w-1/2 space-y-1">
+           <div className="right w-1/2">
 <h1 className='text-2xl font-semibold'>Clothes Name</h1>
-<h3 className='text-xl text-blue-500'>$ 50.20</h3>
+<h3 className='text-xl text-blue-500 my-3'>$ 50.20</h3>
 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus aliquam similique cum a architecto aspernatur, illum nulla nemo veniam repellendus!</p>
-
+ <div className='quality flex items-center gap-3 my-4'>
+<button className='px-3 py-1 text-2xl bg-slate-200' onClick={()=> setQuantity((prev)=> prev === 1 ? 1 : prev - 1)}>-</button>
+<span>{quantity}</span>
+<button className='px-3 py-1 text-2xl bg-slate-200' onClick={()=> setQuantity((prev)=> prev + 1)}>+</button>
+ </div>
+ <button className="add flex  items-center gap-2 bg-blue-400 py-2 px-7 text-white font-normal">
+    Add To Cart <BsFillCartFill />
+ </button>
+ <div className='flex items-center gap-5 my-4'>
+    <button className='flex items-center gap-1 text-blue-400 bg-base-200 py-1 px-3'>Add To WishList <BsHeart /></button>
+    <button className='flex items-center gap-1 text-blue-400 bg-base-200 py-1 px-3'>Add To Compare <FaBalanceScale /> </button>
+ </div>
            </div>
         </div>
     );
