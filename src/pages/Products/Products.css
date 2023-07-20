@@ -1,10 +1,5 @@
-.products {
-   
-  }
-  
-
 .left{
-    height: 100%; /* Set the desired height, or use another value that fits your layout */
+    height: 100%; 
     position: sticky !important;
     top: 20px;
 }
