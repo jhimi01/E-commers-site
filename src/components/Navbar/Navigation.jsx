@@ -2,8 +2,10 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import allcountry from '../../../public/allcountry.png';
 import { BsFillCartPlusFill, BsFillHeartFill, BsFillSearchHeartFill } from 'react-icons/bs';
+import { AiOutlineHeart, AiOutlineUser } from 'react-icons/ai';
 import { FaUserAlt} from 'react-icons/fa';
-import { BiSolidDownArrow } from 'react-icons/bi';
+import { BiSolidDownArrow, BiSearch } from 'react-icons/bi';
+import Cart from '../Cart/Cart';
 
 const Navigation = () => {
 
@@ -65,10 +67,30 @@ const Navigation = () => {
       <Link to='/products/2'><li><a>About</a></li></Link>
       <Link to='/products/3'><li><a>Contact</a></li></Link> 
       <Link to='/products/3'><li><a>Stores</a></li></Link> 
-      <li><a><BsFillCartPlusFill /> <span>0</span></a></li> 
-      <li><a><BsFillSearchHeartFill /></a></li>
-      <li><a><BsFillHeartFill /></a></li>
-      <li><a><FaUserAlt /></a></li>
+     <div className='flex items-center text-xl'>
+     <div className="dropdown dropdown-end">
+      <label tabIndex={0} className="btn btn-ghost btn-circle">
+        <div className="indicator">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+          <span className="badge badge-sm indicator-item badge-info">8</span>
+        </div>
+      </label>
+      <div tabIndex={0} className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
+        <div className="card-body">
+          {/* <span className="font-bold text-lg">8 Items</span>
+          <span className="text-info">Subtotal: $999</span>
+          <div className="card-actions">
+            <button className="btn btn-primary btn-block">View cart</button>
+          </div> */}
+          <Cart />
+        </div>
+      </div>
+    </div> 
+      <li><p><BiSearch /></p></li>
+      <li><p><AiOutlineHeart /></p></li>
+      <li><p><AiOutlineUser /></p></li>
+ 
+     </div>
       
     </ul>
   </div>

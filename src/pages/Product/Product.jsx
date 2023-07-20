@@ -25,7 +25,7 @@ const Product = () => {
            <div className="right w-1/2">
 <h1 className='text-2xl font-semibold'>Clothes Name</h1>
 <h3 className='text-xl text-blue-500 my-3'>$ 50.20</h3>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus aliquam similique cum a architecto aspernatur, illum nulla nemo veniam repellendus!</p>
+<p>Classic and timeless shirt suitable for both formal and casual occasions. Crafted from high-quality fabric with attention to detail. A wardrobe essential for every fashion-conscious individual.</p>
  <div className='quality flex items-center gap-3 my-4'>
 <button className='px-3 py-1 text-2xl bg-slate-200' onClick={()=> setQuantity((prev)=> prev === 1 ? 1 : prev - 1)}>-</button>
 <span>{quantity}</span>

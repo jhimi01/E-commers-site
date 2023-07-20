@@ -1,32 +1,34 @@
 [
-      {
-        "id": 1,
-        "img": "https://i.ibb.co/K2xc1d0/pexels-monstera-6311475.jpg",
-        "img2": "https://i.ibb.co/RzynbSJ/pexels-monstera-6311326.jpg",
-        "clothesName": "T-Shirt",
-        "isNew": true,
-        "oldPrice": 29.99,
-        "price": 19.99
-      },
-      {
-        "id": 3,
-        "img": "https://i.ibb.co/19Xf9f1/pexels-ali-karimiboroujeni-17478031.jpg",
-        "img2": "https://i.ibb.co/1XgzL1q/pexels-ali-karimiboroujeni-17478035.jpg",
-        "clothesName": "Dress",
-        "isNew": true,
-        "oldPrice": 19.99,
-        "price": 14.99
-      },
-      {
-        "id": 4,
-        "img": "https://i.ibb.co/gvR30mp/pexels-vitaly-gorbachev-17035518.jpg",
-        "img2": "https://i.ibb.co/X3rctbB/pexels-vitaly-gorbachev-17035522.jpg",
-        "clothesName": "Shirt",
-        "isNew": false,
-        "oldPrice": 39.99,
-        "price": 29.99
-      },
-      
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/K2xc1d0/pexels-monstera-6311475.jpg",
+    "img2": "https://i.ibb.co/RzynbSJ/pexels-monstera-6311326.jpg",
+    "clothesName": "T-Shirt",
+    "isNew": true,
+    "oldPrice": 29.99,
+    "price": 19.99,
+    "description": "A comfortable and stylish T-shirt for everyday wear. Made from high-quality fabric and available in various colors and sizes. Perfect for casual occasions or as a layering piece."
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/19Xf9f1/pexels-ali-karimiboroujeni-17478031.jpg",
+    "img2": "https://i.ibb.co/1XgzL1q/pexels-ali-karimiboroujeni-17478035.jpg",
+    "clothesName": "Dress",
+    "isNew": true,
+    "oldPrice": 19.99,
+    "price": 14.99,
+    "description": "Elegant and versatile dress suitable for various occasions. Features a flattering fit and stylish design. Made from lightweight and breathable fabric, ensuring all-day comfort."
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/gvR30mp/pexels-vitaly-gorbachev-17035518.jpg",
+    "img2": "https://i.ibb.co/X3rctbB/pexels-vitaly-gorbachev-17035522.jpg",
+    "clothesName": "Shirt",
+    "isNew": false,
+    "oldPrice": 39.99,
+    "price": 29.99,
+    "description": "Classic and timeless shirt suitable for both formal and casual occasions. Crafted from high-quality fabric with attention to detail. A wardrobe essential for every fashion-conscious individual."
+  },
       {
         "id": 2,
         "img": "https://i.ibb.co/9qfz8dN/pexels-monstera-6311317.jpg",
@@ -34,7 +36,8 @@
         "clothesName": "Jeans",
         "isNew": false,
         "oldPrice": 49.99,
-        "price": 39.99
+        "price": 39.99,
+        "description": "Classic and timeless shirt suitable for both formal and casual occasions. Crafted from high-quality fabric with attention to detail. A wardrobe essential for every fashion-conscious individual."
       },
       {
         "id": 5,
@@ -43,7 +46,8 @@
         "clothesName": "Skirt",
         "isNew": true,
         "oldPrice": 59.99,
-        "price": 49.99
+        "price": 49.99,
+        "description": "Classic and timeless shirt suitable for both formal and casual occasions. Crafted from high-quality fabric with attention to detail. A wardrobe essential for every fashion-conscious individual."
       },
       {
         "id": 6,
@@ -52,7 +56,8 @@
         "clothesName": "Pants",
         "isNew": true,
         "oldPrice": 24.99,
-        "price": 19.99
+        "price": 19.99,
+        "description": "Classic and timeless shirt suitable for both formal and casual occasions. Crafted from high-quality fabric with attention to detail. A wardrobe essential for every fashion-conscious individual."
       },
       {
         "id": 7,
@@ -61,7 +66,8 @@
         "clothesName": "Blouse",
         "isNew": false,
         "oldPrice": 34.99,
-        "price": 24.99
+        "price": 24.99,
+        "description": "Classic and timeless shirt suitable for both formal and casual occasions. Crafted from high-quality fabric with attention to detail. A wardrobe essential for every fashion-conscious individual."
       },
       {
         "id": 8,
@@ -70,7 +76,8 @@
         "clothesName": "Jacket",
         "isNew": true,
         "oldPrice": 44.99,
-        "price": 34.99
+        "price": 34.99,
+        "description": "Classic and timeless shirt suitable for both formal and casual occasions. Crafted from high-quality fabric with attention to detail. A wardrobe essential for every fashion-conscious individual."
       },
       {
         "id": 9,
@@ -79,7 +86,8 @@
         "clothesName": "Shorts",
         "isNew": true,
         "oldPrice": 19.99,
-        "price": 14.99
+        "price": 14.99,
+        "description": "Classic and timeless shirt suitable for both formal and casual occasions. Crafted from high-quality fabric with attention to detail. A wardrobe essential for every fashion-conscious individual."
       },
       {
         "id": 10,
@@ -88,7 +96,8 @@
         "clothesName": "Sweater",
         "isNew": false,
         "oldPrice": 54.99,
-        "price": 44.99
+        "price": 44.99,
+        "description": "Classic and timeless shirt suitable for both formal and casual occasions. Crafted from high-quality fabric with attention to detail. A wardrobe essential for every fashion-conscious individual."
       }
     ]
   
