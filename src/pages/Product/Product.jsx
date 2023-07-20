@@ -8,8 +8,8 @@ const Product = () => {
     let [quantity, setQuantity] = useState(1)
     
     const imges = [
-        "https://i.ibb.co/tCnwMJp/pexels-valeria-ushakova-3094215.jpg",
-        "https://i.ibb.co/YZHLVkB/pexels-natalie-bond-3759660-1.jpg"
+        "https://i.ibb.co/19Xf9f1/pexels-ali-karimiboroujeni-17478031.jpg",
+        "https://i.ibb.co/1XgzL1q/pexels-ali-karimiboroujeni-17478035.jpg"
     ]
     return (
         <div className='flex justify-between gap-10  w-11/12 mx-auto mt-5'>
@@ -31,12 +31,25 @@ const Product = () => {
 <span>{quantity}</span>
 <button className='px-3 py-1 text-2xl bg-slate-200' onClick={()=> setQuantity((prev)=> prev + 1)}>+</button>
  </div>
- <button className="add flex  items-center gap-2 bg-blue-400 py-2 px-7 text-white font-normal">
+ <button className="add flex uppercase  items-center gap-2 bg-blue-400 py-2 px-7 text-white font-normal">
     Add To Cart <BsFillCartFill />
  </button>
- <div className='flex items-center gap-5 my-4'>
+ <div className='flex items-center gap-5 my-4 uppercase'>
     <button className='flex items-center gap-1 text-blue-400 bg-base-200 py-1 px-3'>Add To WishList <BsHeart /></button>
     <button className='flex items-center gap-1 text-blue-400 bg-base-200 py-1 px-3'>Add To Compare <FaBalanceScale /> </button>
+ </div>
+ <div className="info flex flex-col mb-5">
+    <span className='text-sm font-normal'>Vendor: Polo</span>
+    <span className='text-sm font-normal'>Product Type: T-shirt</span>
+    <span className='text-sm font-normal'>Tag: T-shirt, Women, Top</span>
+ </div>
+ <hr />
+ <div className="info flex flex-col my-3 w-1/2">
+    <span className='py-1 text-sm font-normal'>DESCRIPTION</span>
+    <hr />
+    <span className='py-1 text-sm font-normal'>ADDITIONAL INFORMATION</span>
+    <hr />
+    <span className='py-1 text-sm font-normal'>FAQ</span>
  </div>
            </div>
         </div>
