@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 
-/* img{
+img{
     display: none !important;
-  } */
+  }
 
   body{
     scroll-behavior: smooth;

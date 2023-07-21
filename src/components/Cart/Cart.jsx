@@ -5,33 +5,24 @@ import './Cart.css'
 
 const Cart = () => {
 
-  const [cartItems, setCartItems] = useState([])
+    const [cartItems, setCartItems] = useState(JSON.parse(localStorage.getItem('cartItems')) || []);
 
-    const data = JSON.parse(localStorage.getItem('cartItems')) || []; // Parse the data from localStorage or use an empty array if data is not available
-
-          console.log('darsdsafgfsdg',data)
-
-           
-        
-            const handleRemoveItem = (itemId) => {
-                const existingCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-                const updatedCartItems = existingCartItems.filter(item => item.id !== itemId);
-                localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
-                setCartItems(updatedCartItems); // Update the state with the updated cart items
-                alert('CartItems')
-              };
-        
+    const handleRemoveItem = (itemId) => {
+        const updatedCartItems = cartItems.filter(item => item.id !== itemId);
+        setCartItems(updatedCartItems);
+        localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
+    };
 
     return (
-        <div className='h-[100vh] cart overflow-y-scroll overflow-x-hidden'>
+        <div className='h-[75vh] cart overflow-y-scroll overflow-x-hidden'>
            <div className='bg-base-200 px-3 py-2 rounded mb-4'>
            <h2 className='text-xl font-bold'>Products in your cart</h2>
           <span className="text-info">Subtotal: $999</span>
                     
            </div>
             <div>
-                {data.map(product => (
-                    <div className='mb-3'>
+                {cartItems.map(product => (
+                    <div key={product.id} className='mb-3'>
                         <img className='h-[200px] w-full object-cover' src={product?.img} alt="item" />
                         <div className='flex items-center gap-3 justify-between'>
                         <div className='w-5/6'>

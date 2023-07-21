@@ -5,47 +5,41 @@ import { useParams } from 'react-router-dom';
 import useProducts from '../../hooks/useProducts';
 
 const Product = () => {
- const { id } = useParams()
-//  console.log(id)
+   const { id } = useParams();
 
- const {products} = useProducts();
-//  console.log(products)
- const product = products.filter(product => product.id == id)
- console.log(product)
-//  useEffect(()=>{
-//    window.scroll(0, 0)
-// },[])
-    const [selectedImage, setSelectedImage] = useState([0])
-   //  let [quantity, setQuantity] = useState(1)
-   
-  const [quantity, setQuantity] = useState(() => {
-   // Get the stored quantity from localStorage for the current product
-   const existingCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-   const productIncart = existingCartItems.find((item) => item.id === product[0]?.id);
-   return productIncart ? productIncart.quantity : 1;
- });
-    console.log(quantity)
-    const imges = [
-      product[0]?.img,
-      product[0]?.img2
-    ]
-
-
-    const handleAddcart = () => {
-      const existingCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-      const productIncartIndex = existingCartItems.findIndex((item) => item.id === product[0]?.id);
-  
-      if (productIncartIndex !== -1) {
-        existingCartItems[productIncartIndex].quantity = quantity; // Update the quantity in localStorage
-      } else {
-        existingCartItems.push({ ...product[0], quantity: quantity });
-      }
-  
-      localStorage.setItem('cartItems', JSON.stringify(existingCartItems));
-  
-      alert('Added product');
-    };
-  
+   const { products } = useProducts();
+   const product = products.filter((product) => product.id == id);
+ 
+   const [selectedImage, setSelectedImage] = useState([0]);
+ 
+   const [quantity, setQuantity] = useState(() => {
+     const existingCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+     const productIncart = existingCartItems.find((item) => item.id === product[0]?.id);
+     return productIncart ? productIncart.quantity : 1;
+   });
+ 
+   const imges = [
+     product[0]?.img,
+     product[0]?.img2
+   ];
+ 
+   const handleAddcart = () => {
+     const existingCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+     const productIncartIndex = existingCartItems.findIndex((item) => item.id === product[0]?.id);
+ 
+     if (productIncartIndex !== -1) {
+       existingCartItems[productIncartIndex].quantity = quantity;
+     } else {
+       existingCartItems.push({ ...product[0], quantity: quantity });
+     }
+ 
+     localStorage.setItem('cartItems', JSON.stringify(existingCartItems));
+ 
+     // Update the cartItems state in the Cart component
+     window.dispatchEvent(new Event('cartUpdated'));
+ 
+     alert('Added product');
+   };
     
 
 
