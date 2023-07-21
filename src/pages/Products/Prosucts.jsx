@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import List from '../../components/List/List';
 import { useParams } from 'react-router-dom';
 import './Products.css'
@@ -9,6 +9,9 @@ const Products = () => {
     // console.log(params)
     const [maxPrice, setMaxPrice] = useState(1000)
     const [sort, setSort] = useState(null)
+    useEffect(()=>{
+        window.scroll(0, 0)
+    },[])
 
     return (
         <div className='products md:flex md:w-11/12 mx-auto justify-between'>

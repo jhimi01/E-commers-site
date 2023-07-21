@@ -37,6 +37,7 @@ const router = createBrowserRouter([
     {
       path : '/product/:id',
       element: <Product />,
+      loader: ({ params }) => fetch(params.id),
     }
   ]
   

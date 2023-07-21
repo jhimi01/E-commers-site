@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* img{
+    display: none !important;
+  } */
+
+  body{
+    scroll-behavior: smooth;
+    transition: transform 0.3s linear;
+  }

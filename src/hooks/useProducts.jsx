@@ -1,15 +1,23 @@
 import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
 
 const useProducts = ()=>{
   const { isLoading, data: products = [] } = useQuery({
     queryKey: ['products'],
     queryFn: async () =>{
-        const response = await fetch('../../public/feature.json')
-        return response.json()
+        const response = await axios.get('../../public/feature.json'
+        // ,{
+        //   headers: {
+        //     Authorization: 'bearer ' + process.env.REAT_APP_API_TOKEN,
+        //   }
+        // }
+        )
+        return response.data
     }
     
   })
-  return {products}
+  // console.log(products)
+  return {products, isLoading}
 }
 
 export default useProducts;

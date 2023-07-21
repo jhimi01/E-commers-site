@@ -1,34 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import useProducts from '../../hooks/useProducts';
 import { BsCashCoin, BsTrashFill } from 'react-icons/bs';
+import './Cart.css'
 
 const Cart = () => {
 
-    const { products } = useProducts()
-    const data = [
-        {
-            "id": 3,
-            "img": "https://i.ibb.co/19Xf9f1/pexels-ali-karimiboroujeni-17478031.jpg",
-            "img2": "https://i.ibb.co/1XgzL1q/pexels-ali-karimiboroujeni-17478035.jpg",
-            "clothesName": "Dress",
-            "isNew": true,
-            "oldPrice": 19.99,
-            "price": 14.99,
-            "description": "Elegant and versatile dress suitable for various occasions. Features a flattering fit and stylish design. Made from lightweight and breathable fabric, ensuring all-day comfort."
-          },
-          {
-            "id": 4,
-            "img": "https://i.ibb.co/gvR30mp/pexels-vitaly-gorbachev-17035518.jpg",
-            "img2": "https://i.ibb.co/X3rctbB/pexels-vitaly-gorbachev-17035522.jpg",
-            "clothesName": "Shirt",
-            "isNew": false,
-            "oldPrice": 39.99,
-            "price": 29.99,
-            "description": "Classic and timeless shirt suitable for both formal and casual occasions. Crafted from high-quality fabric with attention to detail. A wardrobe essential for every fashion-conscious individual."
-          }]
+  const [cartItems, setCartItems] = useState([])
+
+    const data = JSON.parse(localStorage.getItem('cartItems')) || []; // Parse the data from localStorage or use an empty array if data is not available
+
+          console.log('darsdsafgfsdg',data)
+
+           
+        
+            const handleRemoveItem = (itemId) => {
+                const existingCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+                const updatedCartItems = existingCartItems.filter(item => item.id !== itemId);
+                localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
+                setCartItems(updatedCartItems); // Update the state with the updated cart items
+                alert('CartItems')
+              };
+        
 
     return (
-        <div className='h-full overflow-auto'>
+        <div className='h-[100vh] cart overflow-y-scroll overflow-x-hidden'>
            <div className='bg-base-200 px-3 py-2 rounded mb-4'>
            <h2 className='text-xl font-bold'>Products in your cart</h2>
           <span className="text-info">Subtotal: $999</span>
@@ -45,7 +40,7 @@ const Cart = () => {
                             <p className='text-sm text-gray-500'>{product?.description?.substring(0, 100)}</p>
                         </div>
                     <div className='px-4'>
-                    <button><BsTrashFill className='text-2xl'/></button>
+                    <button onClick={()=>handleRemoveItem(product.id)}><BsTrashFill className='text-2xl'/></button>
                     </div>
                         </div>
                     {/* delete icon */}

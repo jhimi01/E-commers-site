@@ -1,0 +1,15 @@
+.cart::-webkit-scrollbar {
+    width: 2px;
+   
+  }
+   
+  .cart::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+   
+  }
+   
+  .cart::-webkit-scrollbar-thumb {
+    background-color: #3b82f6;
+    /* outline: 1px solid slategrey; */
+    border-radius: 5px;
+  }
