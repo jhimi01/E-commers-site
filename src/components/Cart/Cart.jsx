@@ -5,6 +5,8 @@ import './Cart.css'
 
 const Cart = () => {
 
+    
+
     const [cartItems, setCartItems] = useState(JSON.parse(localStorage.getItem('cartItems')) || []);
 
     const handleRemoveItem = (itemId) => {
